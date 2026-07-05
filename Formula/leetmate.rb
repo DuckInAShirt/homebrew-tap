@@ -5,21 +5,21 @@
 class Leetmate < Formula
   desc "不给答案，只给提示——终端里的 LeetCode 辅导 + 间隔复习工具"
   homepage "https://github.com/DuckInAShirt/leetmate"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.3/leetmate_0.2.3_macOS_amd64.tar.gz"
-      sha256 "ab9b5f5990dfc4c918c91fe88e119feadacccfcd5720d6e9a8dbfe2821870291"
+      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.4/leetmate_0.2.4_macOS_amd64.tar.gz"
+      sha256 "c66ae2c12573ecf1b4113a873f0ec7342904bc4035cd9dbe2673d98f9f433f88"
 
       define_method(:install) do
         bin.install "leetmate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.3/leetmate_0.2.3_macOS_arm64.tar.gz"
-      sha256 "818ce483d7ab6e9f2c87eebbe48f430dc8c64b9ba4572ba94441a564c08433a3"
+      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.4/leetmate_0.2.4_macOS_arm64.tar.gz"
+      sha256 "789588e69704e2b5be2381b998d72fa7c1db9ddb41189326654d517f58bd4904"
 
       define_method(:install) do
         bin.install "leetmate"
@@ -29,15 +29,15 @@ class Leetmate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.3/leetmate_0.2.3_linux_amd64.tar.gz"
-      sha256 "0c91c8914d24456927960ada872adead950c6995e00d37dd98c5258c092351ce"
+      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.4/leetmate_0.2.4_linux_amd64.tar.gz"
+      sha256 "cf939e6ce027777fd0ebd28ebf3dcfa85d4426f1a4bb9a8ed157a29dc014a0f4"
       define_method(:install) do
         bin.install "leetmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.3/leetmate_0.2.3_linux_arm64.tar.gz"
-      sha256 "a8cbc387aec95152c30bdcbb3f36498b7781bba774f80504d8c1fd1f2c3ddfcc"
+      url "https://github.com/DuckInAShirt/leetmate/releases/download/v0.2.4/leetmate_0.2.4_linux_arm64.tar.gz"
+      sha256 "f9b9bcd974653dc8fc7a28811b0f68d2dcae7a3161cbcdf920b99cacfa19f8e4"
       define_method(:install) do
         bin.install "leetmate"
       end
